@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<h1>Pagina Inicial</h1>
+
+		<% var texto =  'Trabalhando com EJS';  %>
+
+		<p><%= texto %></p>
+
+		<table>
+			<thead>
+				<th>Nome</th>
+				<th>Email</th>
+			</thead>
+			<tbody>
+				<% for( var c in clientes){ %>
+				<tr>
+					<td><%= clientes[c].nome %></td>
+					<td><%= clientes[c].email %></td>
+				</tr>
+
+				<% } %>
+			</tbody>
+		</table>
+		<br>
+		<form action="/" method="post">
+				<input type="text" name="nome" placeholder="Nome:">
+				<input type="text" name="email" placeholder="E-mail:">
+				<button>Adicionar</button>
+
+		</form>
+
+	</body>
+
+</html>

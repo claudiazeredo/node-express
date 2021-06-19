@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<h1>Pagina Detalhe</h1>
+
+		<% var texto =  'Trabalhando com EJS';  %>
+
+		<p><%= texto %></p>
+    <br>
+    <% if (cliente != ''){ %>
+	     <p>Cliente: <%= cliente.nome %> - E-mail:  <%= cliente.email %><p>
+    <% } else { %>
+      <p> Esse cliente não existe</p>
+    <% }  %>
+	</body>
+
+</html>
